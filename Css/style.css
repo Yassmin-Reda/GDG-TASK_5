@@ -1,23 +1,23 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-.container{
+.container {
     width: 75%;
     margin: auto;
 }
@@ -31,8 +31,7 @@ li{
 }
 
 .line::before,
-.line::after
-{
+.line::after {
     content: "";
     position: absolute;
     height: 1.39px;
@@ -62,12 +61,13 @@ main{
     padding-top:80px ;
 } */
 /* --------------------header&nav---------------- */
-header{
+header {
     height: 80px;
     background-color: rgb(36, 36, 36);
+    /* position: relative; */
 }
 
-header nav span{
+header nav span {
     position: absolute;
     font-size: 30px;
     font-weight: bold;
@@ -75,7 +75,12 @@ header nav span{
     color: #ff2f5b;
 }
 
-header nav ul{
+/* 
+header nav{
+    position: fixed;
+} */
+
+header nav ul {
     position: absolute;
     top: 28px;
     display: flex;
@@ -83,16 +88,16 @@ header nav ul{
     font-size: 20px;
 }
 
-header nav a{
+header nav a {
     margin-left: 30px;
 }
 
-header nav  li:first-child a{
+header nav li:first-child a {
     color: #ff2f5b;
 }
 
 /* ---------------------hero------------------------ */
-#hero{
+#hero {
     background: url(../images/home-bg.jpg)center/cover no-repeat;
     height: 90vh;
     width: 100%;
@@ -111,25 +116,25 @@ header nav  li:first-child a{
     padding-top: 250px;
 }
 
-#hero .overlay span{
+#hero .overlay span {
     color: white;
     font-size: 25px;
 }
 
-#hero .overlay h1{
+#hero .overlay h1 {
     padding: 10px 0;
     color: #ff2f5b;
     font-size: 65px;
 }
 
-#hero .overlay p{
+#hero .overlay p {
     color: rgba(84, 84, 84, 0.899);
     font-size: 25px;
 }
 
 /* ---------------about------------------ */
 
-#about{
+#about {
     width: 75%;
     margin: auto;
     padding: 100px 0;
@@ -139,7 +144,7 @@ header nav  li:first-child a{
 }
 
 
-.img-box{
+.img-box {
     position: absolute;
     width: 350px;
     height: 58%;
@@ -147,7 +152,7 @@ header nav  li:first-child a{
     border-radius: 5px;
 }
 
-.img-box img{
+.img-box img {
     position: relative;
     width: 100%;
     height: 100%;
@@ -157,47 +162,47 @@ header nav  li:first-child a{
     border-radius: 5px;
 }
 
-#about .about-right .about-info{
+#about .about-right .about-info {
     padding: 40px 0;
 }
 
-#about .about-right h2{
+#about .about-right h2 {
     font-size: 30px;
     font-weight: bold;
     padding: 15px 0;
 }
 
-#about .about-right h2 span{
+#about .about-right h2 span {
     color: #ff2f5b;
 }
 
-#about .about-right .dot{
-    padding-bottom:30px ;
-    border-bottom:1px dotted;
+#about .about-right .dot {
+    padding-bottom: 30px;
+    border-bottom: 1px dotted;
     color: #333333bb;
 }
 
-#about .about-right .about-info{
+#about .about-right .about-info {
     display: flex;
     gap: 120px;
 }
 
-#about .about-right .about-info span{
+#about .about-right .about-info span {
     color: #333333bb;
 }
 
-#about .about-right .about-info p{
+#about .about-right .about-info p {
     line-height: 27px;
 }
 
-#about .about-right .about-info .left{
+#about .about-right .about-info .left {
     position: absolute;
     left: 750px;
 }
 
 #about .about-right .btn-cv,
 .btn-hire,
-#contact button{
+#contact button {
     background-color: #ff2f5b;
     color: white;
     border: none;
@@ -206,18 +211,18 @@ header nav  li:first-child a{
     height: 45px;
 }
 
-#about .about-right  i{
+#about .about-right i {
     font-size: 20px;
     margin-left: 5px;
     color: white;
 }
 
-#about .about-right .btn-cv{
+#about .about-right .btn-cv {
     width: 20%;
     margin-right: 10px;
 }
 
-#about .about-right .btn-hire{
+#about .about-right .btn-hire {
     width: 15%;
 }
 
@@ -262,13 +267,13 @@ header nav  li:first-child a{
 
 .service.active {
     background: #fff;
-    height:130px;
+    height: 130px;
 }
 
 /* ------------------- Portfolio Sec--------------- */
 #portfolio,
 #client,
-#contact{
+#contact {
     text-align: center;
     padding: 60px 0 80px 0;
 }
@@ -286,7 +291,7 @@ header nav  li:first-child a{
 }
 
 #portfolio .spans span:first-child {
-    color: #ff2f5b; 
+    color: #ff2f5b;
 }
 
 #portfolio .imgs,
@@ -297,9 +302,10 @@ header nav  li:first-child a{
 }
 
 #portfolio .imgs img,
-#blog .blog1 img{
+#blog .blog1 img {
     width: 100%;
 }
+
 /* -------------review------------- */
 #review {
     background: #f5f5f5;
@@ -315,14 +321,14 @@ header nav  li:first-child a{
     margin: auto;
 }
 
-#review .items .item span{
-    display:block;
+#review .items .item span {
+    display: block;
     font-size: 25px;
     font-weight: bold;
     margin: 15px 0;
 }
 
-#review .items .item p{
+#review .items .item p {
     color: #555;
     margin: 15px 0;
 }
@@ -351,7 +357,7 @@ header nav  li:first-child a{
 
 
 .client-img {
-    width:  200px;
+    width: 200px;
     height: 200px;
     margin-right: 30px;
     position: relative;
@@ -427,10 +433,11 @@ header nav  li:first-child a{
     text-align: center;
     margin: 80px 0;
 }
+
 /* -------------cards------------ */
 #cards {
     background: #f5f5f5;
-    padding-bottom: 70px ;
+    padding-bottom: 70px;
 }
 
 #cards .blog-cards {
@@ -441,7 +448,7 @@ header nav  li:first-child a{
 #cards .card {
     background: #fff;
     padding: 20px 20px 60px 20px;
-    border-top:2px solid black ;
+    border-top: 2px solid black;
 }
 
 #cards .card h3 {
@@ -450,17 +457,18 @@ header nav  li:first-child a{
     margin-top: 15px;
 }
 
-#cards .card p,.date{
+#cards .card p,
+.date {
     color: #555;
     margin: 15px 0;
 }
 
 #cards .card a {
-    color:black;
+    color: black;
     font-weight: bold;
 }
 
-#cards .card a i{
+#cards .card a i {
     font-size: 14px;
 }
 
@@ -473,7 +481,7 @@ header nav  li:first-child a{
 
 }
 
-#contact .container form{
+#contact .container form {
     width: 60%;
     margin: auto;
 }
@@ -502,6 +510,7 @@ header nav  li:first-child a{
     margin: 20px 0;
     padding: 15px;
 }
+
 /* --------------------------footer---------------------------- */
 #footer {
     background-color: #282727f5;
@@ -509,11 +518,12 @@ header nav  li:first-child a{
     text-align: center;
 }
 
-#footer .social-icons i{
+#footer .social-icons i {
     color: white;
     font-size: 25px;
 }
-#footer .social-icons a:nth-child(2) i{
+
+#footer .social-icons a:nth-child(2) i {
     color: #ff2f5b;
 }
 
@@ -532,3 +542,265 @@ header nav  li:first-child a{
     color: #ff305b;
 }
 
+/* ================= Responsive ================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+    .container {
+        width: 90%;
+    }
+
+    header nav ul {
+        margin-left: 300px;
+        font-size: 18px;
+    }
+
+    #about {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-box {
+        position: relative;
+    }
+
+    #about .about-right .about-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #about .about-right .about-info .left {
+        position: static;
+    }
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #portfolio .imgs,
+    #blog .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #review .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #cards .blog-cards {
+        flex-direction: column;
+    }
+
+    #contact .container form {
+        width: 80%;
+    }
+
+    #contact button {
+        width: 40%;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    header nav span {
+        position: static;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 10px;
+    }
+
+    #hero .overlay {
+        padding-top: 150px;
+    }
+
+    #hero .overlay h1 {
+        font-size: 40px;
+    }
+
+    #hero .overlay p {
+        font-size: 18px;
+    }
+
+    #about {
+        width: 90%;
+    }
+
+    .img-box {
+        width: 250px;
+        height: auto;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    #portfolio .imgs,
+    #blog .blogs {
+        grid-template-columns: 1fr;
+    }
+
+    #review .items {
+        grid-template-columns: 1fr;
+    }
+
+    /* إصلاح Client Section */
+    .client-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .client-card::before {
+        display: none;
+    }
+
+    .client-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .client-img img {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .client-content {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* إصلاح الفورم */
+    #contact .row {
+        flex-direction: column;
+    }
+
+    #contact .row input {
+        width: 100%;
+    }
+
+    #contact .container form {
+        width: 95%;
+    }
+
+    #contact button {
+        width: 60%;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    #hero .overlay h1 {
+        font-size: 30px;
+    }
+
+    #hero .overlay span {
+        font-size: 18px;
+    }
+
+    #hero .overlay p {
+        font-size: 16px;
+    }
+
+    .line {
+        width: 100px;
+    }
+
+    #contact button {
+        width: 80%;
+    }
+}
+
+
+
+
+/*  Navbar Fix  */
+
+/* icon */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    /* right: 20px; */
+    top: 20px;
+    z-index: 1000;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+}
+
+/* hide checkbox */
+#menu-check {
+    display: none;
+}
+
+/* desktop */
+.nav-links {
+    display: flex;
+    /* gap: 30px; */
+}
+
+/* responsive */
+@media (max-width: 168px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #242424;
+        padding: 20px 0;
+        text-align: center;
+        z-index: 999;
+    }
+
+    #menu-check:checked~.nav-links {
+        display: flex;
+    }
+
+    /* animation */
+    #menu-check:checked+.menu-toggle span:nth-child(1) {
+        transform: rotate(45deg) translate(16px, 16px);
+    }
+
+    #menu-check:checked+.menu-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-check:checked+.menu-toggle span:nth-child(3) {
+        transform: rotate(-45deg) translate(3px, -3px);
+    }
+}
