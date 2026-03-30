@@ -542,7 +542,7 @@ header nav li:first-child a {
     color: #ff305b;
 }
 
-/* ================= Responsive ================= */
+/*  Responsive  */
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -660,7 +660,6 @@ header nav li:first-child a {
         grid-template-columns: 1fr;
     }
 
-    /* إصلاح Client Section */
     .client-card {
         flex-direction: column;
         align-items: center;
@@ -690,7 +689,6 @@ header nav li:first-child a {
         text-align: center;
     }
 
-    /* إصلاح الفورم */
     #contact .row {
         flex-direction: column;
     }
@@ -768,7 +766,7 @@ header nav li:first-child a {
 }
 
 /* responsive */
-@media (max-width: 168px) {
+@media (max-width: 1280px) {
 
     .menu-toggle {
         display: flex;
